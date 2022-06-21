@@ -1,5 +1,5 @@
 const connection = require('./connection');
-const {postUser} = require('../helpers/queries');
+const {postUser, getUserByUserName} = require('../helpers/queries');
 
 const create= async(user) => {
   const { username, password } = user;
@@ -8,6 +8,13 @@ const create= async(user) => {
   return {
     id: insertId, username,
   };
+};
+
+const getByUserName = async(username)=> {
+  const [data] = await connection.execute(getUserByUserName, [username]);
+  const [user] = data;
+  if (user) return user;
+  return {};
 }
 
-module.exports = {create}
+module.exports = {create, getByUserName}

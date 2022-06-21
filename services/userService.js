@@ -6,4 +6,9 @@ const create = async(user) => {
   return getToken(data);
 }
 
-module.exports = {create}
+const getByUsername = async(username) => {
+  const data = await userModel.getByUserName(username);
+  return data;
+}
+
+module.exports = {create, getByUsername}
