@@ -1,6 +1,5 @@
 const {getTasksByUser, postTask} = require('../services/taskService');
 
-
 const getTasks = async (req,res, next) => {
   try {
     const {id} = req.user;

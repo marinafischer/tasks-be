@@ -7,7 +7,6 @@ const getTasks = async (user_id) => {
 };
 
 const insertTask = async ({user_id, content, status=1}) => {
-  // status = status || 1
   const [data] = await connection.execute(postTask, [user_id, content, status]);
   const { insertId } = data;
   return insertId;

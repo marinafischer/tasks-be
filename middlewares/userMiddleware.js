@@ -4,7 +4,7 @@ const getToken = require('../helpers/getToken');
 
 const USER = Joi.object({
   username: Joi.string().min(3).required(),
-  password: Joi.string().min(6).required(32),
+  password: Joi.string().min(6).max(32).required(),
 });
 
 const userMiddleware = (req, res, next) => {
