@@ -1,4 +1,4 @@
-const {getTasksByUser, postTask} = require('../services/taskService');
+const {getTasksByUser, postTask, updateTask} = require('../services/taskService');
 
 const getTasks = async (req,res, next) => {
   try {
@@ -20,4 +20,15 @@ const insertTask = async (req, res, next) => {
   }
 }
 
-module.exports = {getTasks, insertTask}
+const putTask = async (req, res, next) => {
+  try {
+    const {id} = req.params;
+    const data = {...req.body, id, user_id: req.user.id}
+    const tasks = await updateTask(data);
+    res.status(200).json(tasks)
+  } catch (error) {
+    next(error);
+  }
+}
+
+module.exports = {getTasks, insertTask, putTask}
