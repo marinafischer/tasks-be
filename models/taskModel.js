@@ -1,5 +1,5 @@
 const connection = require('./connection');
-const {getTasksByUser, postTask, updateTask} = require('../helpers/queries');
+const {getTasksByUser, postTask, updateTask, deleteTask} = require('../helpers/queries');
 
 const getTasks = async (user_id) => {
   const [data] = await connection.execute(getTasksByUser, [user_id]);
@@ -17,5 +17,9 @@ const putTask = async({content, status, id})=>{
   return data;
 }
 
+const delTask = async(id)=>{
+  await connection.execute(deleteTask, [id]);
+}
 
-module.exports = {getTasks, insertTask, putTask}
+
+module.exports = {getTasks, insertTask, putTask, delTask}

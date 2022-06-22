@@ -1,4 +1,4 @@
-const {getTasks, insertTask, putTask} = require('../models/taskModel');
+const {getTasks, insertTask, putTask, delTask} = require('../models/taskModel');
 
 const getTasksByUser = async (user_id) => {
   const tasks = await getTasks(user_id);
@@ -17,5 +17,11 @@ const updateTask = async (data) => {
   return tasks;
 }
 
+const deleteTask = async (id, user_id) => {
+  await delTask(id);
+  const tasks = await getTasksByUser(user_id);
+  return tasks;
+}
 
-module.exports = {getTasksByUser, postTask, updateTask}
+
+module.exports = {getTasksByUser, postTask, updateTask, deleteTask}
