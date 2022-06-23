@@ -4,7 +4,6 @@ const connection = require('../../../models/connection');
 const taskModel = require('../../../models/taskModel');
 const { describe, beforeEach, afterEach, it } = require('mocha');
 
-
 describe('Buscas as tarefas de um usuário no banco de dados através de seu id', () => {
   
   const id = 5;
@@ -68,5 +67,4 @@ describe('Buscas as tarefas de um usuário no banco de dados através de seu id'
       }
     );
   });
-
 });

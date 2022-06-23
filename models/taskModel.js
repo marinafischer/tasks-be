@@ -13,8 +13,7 @@ const insertTask = async ({user_id, content, status=1}) => {
 }
 
 const putTask = async({content, status, id})=>{
-  const [data] = await connection.execute(updateTask, [content, status, id]);
-  return data;
+  await connection.execute(updateTask, [content, status, id]);
 }
 
 const delTask = async(id)=>{
