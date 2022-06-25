@@ -19,4 +19,4 @@ describe('Insere um novo usuário', () => {
     const result = await userService.create(payload);
     expect(result).to.be.an('string')
   });
-})
+});
