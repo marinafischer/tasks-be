@@ -5,18 +5,18 @@ Para a construção da mesma, foi usado: JavaScript, Node.JS, Express, MySQL.
 
 ## Para a execução do código, é necessário
   - node v16;
-  - Sistema gerenciador de banco de dados MySQL (como workbench);
+  - Sistema gerenciador de banco de dados para o MySQL (como workbench);
   - MySQL ou docker;
 
 ## Para iniciar
   - na raiz do projeto execute o comando 
-    npm install
-  - caso você não tenha o mysql, você pode rodar o mesmo em um container, com o comando:
-    docker run --name meu-mysql-5_7 -e MYSQL_ROOT_PASSWORD=1234 -d -p 3306:3306 mysql:5.7
+    ```npm install```
+  - caso você não tenha o MySQL, você pode rodar o mesmo em um container, com o comando:
+    ```docker run --name meu-mysql-5_7 -e MYSQL_ROOT_PASSWORD=1234 -d -p 3306:3306 mysql:5.7```
   - na raiz do projeto, no arquivo tasksDB.sql você encontrará os comandos necessários para criar o banco de dados, execute o mesmo em seu sistema gerenciador de banco de dados;
-  - caso você esteja usando o mysql instalado em seu computador, no arquivo models>connection insira os dados do seu mysql;
+  - caso você esteja usando o MySQL instalado em seu computador, no arquivo ```models>connection``` insira os dados do seu MySQL;
   - rode o comando
-    npm start
+    ```npm start```
   - a aplicação será iniciada na porta 3001 da sua máquina (é muito importante que você não altere essa porta)
 
 ## Documentação da API
