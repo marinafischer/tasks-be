@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS `tasksDB`;
 CREATE SCHEMA IF NOT EXISTS `tasksDB` ;
 
 USE `tasksDB` ;
