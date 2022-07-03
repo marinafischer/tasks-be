@@ -1,7 +1,7 @@
 const sinon = require('sinon');
 const { expect } = require('chai');
-const connection = require('../../../models/connection');
-const taskModel = require('../../../models/taskModel');
+const connection = require('../../models/connection');
+const taskModel = require('../../models/taskModel');
 const { describe, beforeEach, afterEach, it } = require('mocha');
 
 describe('Insere uma nova tarefa no banco de dados', () => {

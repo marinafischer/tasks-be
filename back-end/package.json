@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./test/**/*.test.js",
+    "test": "mocha ./test/**/*$NAME*.test.js --exit",
     "start": "node index.js",
     "dev": "nodemon index.js",
     "lint": "eslint . --ext .js,.jsx"

@@ -1,9 +1,9 @@
 const sinon = require('sinon');
 const { expect } = require('chai');
 const { describe, beforeEach, afterEach, it } = require('mocha');
-const connection = require('../../../models/connection');
-const taskService = require('../../../services/taskService');
-const taskController = require('../../../controllers/taskController');
+const connection = require('../../models/connection');
+const taskService = require('../../services/taskService');
+const taskController = require('../../controllers/taskController');
 
 describe('Atualiza uma tarefa conforme dados informados na requisição', () => {
   const res = {};

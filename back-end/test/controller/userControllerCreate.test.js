@@ -1,8 +1,8 @@
 const sinon = require('sinon');
 const { expect } = require('chai');
 const { describe, beforeEach, afterEach, it } = require('mocha');
-const userService = require('../../../services/userService');
-const userController = require('../../../controllers/userController');
+const userService = require('../../services/userService');
+const userController = require('../../controllers/userController');
 
 describe('Insere um novo usuário a partir da controller', () => {
   const res = {};

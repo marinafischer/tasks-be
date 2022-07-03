@@ -1,8 +1,8 @@
 const sinon = require('sinon');
 const { expect } = require('chai');
 const { describe, beforeEach, afterEach, it } = require('mocha');
-const userService = require('../../../services/userService');
-const userModel = require('../../../models/userModel');
+const userService = require('../../services/userService');
+const userModel = require('../../models/userModel');
 
 describe('Busca um usuário pelo nome', () => {
   const userName = 'Marina';

@@ -1,7 +1,7 @@
 const sinon = require('sinon');
 const { expect } = require('chai');
-const connection = require('../../../models/connection');
-const userModel = require('../../../models/userModel');
+const connection = require('../../models/connection');
+const userModel = require('../../models/userModel');
 const { describe, beforeEach, afterEach, it } = require('mocha');
 
 describe('Busca um usuário pelo nome', () => {

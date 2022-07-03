@@ -1,5 +1,5 @@
 const { assert } = require('chai');
-const taskModel = require('../../../models/taskModel');
+const taskModel = require('../../models/taskModel');
 const { describe, it } = require('mocha');
 
 describe('Atualiza uma tarefa através do seu id', () => {

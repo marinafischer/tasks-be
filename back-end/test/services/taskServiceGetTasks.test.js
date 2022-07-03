@@ -2,8 +2,8 @@ const sinon = require('sinon');
 const { expect } = require('chai');
 const { describe, beforeEach, afterEach, it } = require('mocha');
 
-const taskService = require('../../../services/taskService');
-const connection = require('../../../models/connection');
+const taskService = require('../../services/taskService');
+const connection = require('../../models/connection');
 
 describe('Busca as tarefas de um usuário através do seu id', ()=>{
   describe('Quando usuário não é encontrado', ()=>{
