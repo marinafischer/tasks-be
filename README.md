@@ -11,7 +11,7 @@ Para está aplicação foram usadas as seguintes tecnologias:
   - Front-end: JavaScript, Reac.JS, React-Router, Context;
   - Back-end: NodeJS, Express;
   - Banco de dados: MySQL;
-  - Testes: Mocha, Chai, Sinon e Jest; 
+  - Testes: Mocha, Chai, Sinon, chai-http, Reac-testing-library, Jest; 
 
 ## Para a execução do código, é necessário
   - node v16;
@@ -33,7 +33,7 @@ Para está aplicação foram usadas as seguintes tecnologias:
   - na raiz do projeto, no arquivo tasksDB.sql você encontrará os comandos necessários para criar o banco de dados, execute o mesmo em seu sistema gerenciador de banco de dados;
   - caso você esteja usando o MySQL instalado em seu computador, no arquivo 
 
-```models>connection``` insira os dados do seu MySQL;
+  ```models>connection``` insira os dados do seu MySQL;
 
   - rode o comando
     ```npm start```

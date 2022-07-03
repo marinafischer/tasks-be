@@ -6,6 +6,14 @@
   text-align: center;
 }
 
+.Error_Span{
+  background-color: var(--bs-color03);
+  color: var(--bs-color01);
+  font-size: 25px;
+  margin: 1%;
+  text-align: center;
+}
+
 .Form_Fild {
   align-items: center;
   background-color:var(--bs-color03);

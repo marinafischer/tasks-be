@@ -37,7 +37,7 @@ const Login = () => {
         <form className="Form_Fild" onSubmit={ handleSubmit }>
         <h1 className="Login_Title">Faça login para ver sua lista de tarefas</h1>
           {
-            error && <span>Dados inválidos</span>
+            error && <span className="Error_Span">Dados inválidos</span>
           }
           <input
             className="Login_Input" 
