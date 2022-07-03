@@ -1,12 +1,17 @@
 # Tasks APP
 
 Bem vindo a sua lista de tarefas.
-Com está aplicação você será capaz de: ver tarefas salvas, criar novas tarefas, editar e deletar suas tarefas.
+Com está aplicação você será capaz de: 
+  - ver tarefas salvas;
+  - criar novas tarefas;
+  - editar suas tarefas;
+  - deletar tarefas;
+
 Para está aplicação foram usadas as seguintes tecnologias:
-  -Front-end: JavaScript, Reac.JS, React-Router, Context;
-  -Back-end: NodeJS, Express;
-  -Banco de dados: MySQL;
-  -Testes: Mocha, Chai, Sinon e Jest; 
+  - Front-end: JavaScript, Reac.JS, React-Router, Context;
+  - Back-end: NodeJS, Express;
+  - Banco de dados: MySQL;
+  - Testes: Mocha, Chai, Sinon e Jest; 
 
 ## Para a execução do código, é necessário
   - node v16;
@@ -22,9 +27,14 @@ Para está aplicação foram usadas as seguintes tecnologias:
   - rode o comando
     ```npm install```
   - caso você não tenha o MySQL, você pode rodar o mesmo em um container, com o comando:
+
     ```docker run --name meu-mysql-5_7 -e MYSQL_ROOT_PASSWORD=1234 -d -p 3306:3306 mysql:5.7```
+
   - na raiz do projeto, no arquivo tasksDB.sql você encontrará os comandos necessários para criar o banco de dados, execute o mesmo em seu sistema gerenciador de banco de dados;
-  - caso você esteja usando o MySQL instalado em seu computador, no arquivo ```models>connection``` insira os dados do seu MySQL;
+  - caso você esteja usando o MySQL instalado em seu computador, no arquivo 
+
+```models>connection``` insira os dados do seu MySQL;
+
   - rode o comando
     ```npm start```
   - a aplicação será iniciada na porta 3001 da sua máquina (é muito importante que você não altere essa porta)
@@ -35,7 +45,7 @@ Para está aplicação foram usadas as seguintes tecnologias:
   - na raiz da pasta do front-end você encontrará todas as informações sobre o APP.
   - rode o comando 
     ```npm install```
-  - rode o comando
+  - após a instalaçõ das dependências, rode o comando
     ```npm start```
   - a aplicação será iniciada na porta 3000 da sua máquina (é muito importante que você já tenha inicado a sua API)
 
