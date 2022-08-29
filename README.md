@@ -8,10 +8,10 @@ Com está aplicação você será capaz de:
   - deletar tarefas;
 
 Para está aplicação foram usadas as seguintes tecnologias:
-  - Front-end: JavaScript, Reac.JS, React-Router, Context;
-  - Back-end: NodeJS, Express;
+  - Front-end: JavaScript, React.JS, React-hooks,React-Router, Context;
+  - Back-end: NodeJS, Express, JWT, Joi;
   - Banco de dados: MySQL;
-  - Testes: Mocha, Chai, Sinon, chai-http, Reac-testing-library, Jest; 
+  - Testes: Mocha, Chai, Sinon, chai-http, Reac-testing-library; 
 
 ## Para a execução do código, é necessário
   - node v16;
