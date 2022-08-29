@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 const secret = 'minhasenhasecreta';
-
+// teste
 module.exports = (req, res, next) => {
   const { authorization } = req.headers;
   if (!authorization) next({ status: 401, message: 'Token not found' });
